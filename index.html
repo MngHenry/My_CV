@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./styles.js"></script>
+  </head>
+  <body class="bm_extension">
+    <header class="nav">
+      <nav><div id="homeClick" onclick="handleHome()">Home</div></nav>
+      <nav><div id="aboutClick" onclick="handleAbout()">About</div></nav>
+      <nav><div id="contactClick" onclick="handleContact()">Contact</div></nav>
+    </header>
+    <div class="background">
+      <div class="card-wrapper">
+        <div class="card" id="card">
+          <div class="portrait-half"></div>
+          <div class="name">
+            HELLO, I'M MAN (HENRY)
+          </div>
+          <div class="quote">
+            I'm full-stack web developer.
+          </div>
+          <div class="favorite">
+            <div class="sport">
+              <img width="20px" height="16px" src="./dumbbell.png" />
+              <p>- Football, swimming</p>
+            </div>
+            <div class="film">
+              <img width="18px" height="16px" src="./film-movie.png" />
+              <p>- Bryan Cranston, Breaking Bad movie</p>
+            </div>
+            <div class="language">
+              <img width="18px" height="16px" src="./comments.png" />
+              <p>- English, Vietnamese</p>
+            </div>
+          </div>
+          <hr color="whitesmoke" />
+          <div class="social-media">
+            <a href="https://twitter.com/MinhMnNguyn3"
+              ><img width="32px" src="./twitter-round-color.png"
+            /></a>
+            <a href="https://www.facebook.com/minhman.nguyen95"
+              ><img width="32px" src="./facebook-round-color.png"
+            /></a>
+            <a href="https://instagram.com/"
+              ><img width="32px" src="./ig-instagram.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="hidden" style="opacity: 0;">
+        <h1>ABOUT ME</h1>
+        <hr />
+        <p>
+          I graduated Chemical Engineering at University of Technology and have
+          Assurance Quality experience about 4 years. However, web development
+          is really interested in so that why I stopped working to learning web
+          with my full time. Now, I've been learning web full-stack developer
+          for 3 months. Focused on: HTML, CSS, JS, Nodejs,...
+        </p>
+      </div>
+      <div id="contact" class="hidden" style="opacity: 0;">
+        <h1>CONTACT</h1>
+        <hr />
+        <div class="contact-box">
+          <div id="email">
+            <div class="Contact-title">Email</div>
+            <div
+              onmouseover="mouseOverMail()"
+              onmouseout="mouseOutMail()"
+              onclick="clickMail()"
+              id="mymail"
+              class="Contact-content"
+            >
+              minhman.nguyen95@gmail.com
+            </div>
+          </div>
+          <div id="media">
+            <div class="Contact-title">Social media</div>
+            <div class="Contact-content">
+              <a href="https://twitter.com/MinhMnNguyn3"
+                ><img width="32px" src="./twitter-round-color.png" />twitter</a
+              >
+              <br />
+              <a href="https://www.facebook.com/minhman.nguyen95"
+                ><img
+                  width="32px"
+                  src="./facebook-round-color.png"
+                />facebook</a
+              >
+              <br />
+              <a href="https://instagram.com/"
+                ><img width="32px" src="./ig-instagram.png" /> instagram</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
